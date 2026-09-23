@@ -3,6 +3,9 @@ body{
 }
 h1{
     font-size: 2.2rem;
+    color: steelblue;
+    font-style: italic;
+    text-shadow: 2px 2px 3px steelblue;
 }
 
 h2{
@@ -35,4 +38,9 @@ ul li a:hover{
 
 ul li{
     padding: .2rem;
+}
+
+footer{
+    font-size: .8rem;
+    text-align: center;
 }
