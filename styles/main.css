@@ -67,3 +67,7 @@ main{
     border: 3px solid steelblue;
     padding: .4rem;
 }
+
+#headerTextRed{
+    color:maroon;
+}
