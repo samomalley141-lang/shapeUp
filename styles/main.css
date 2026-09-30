@@ -77,3 +77,71 @@ main{
     grid-template-columns: 1fr 2fr;
     grid-gap: 1rem;
 }
+
+#navBar {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  background-color: steelblue;
+}
+
+#navBar::after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+#navBar > li {
+  float: left;
+  position: relative;
+}
+
+#navBar li a {
+  display: block;
+  color: white;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+}
+
+#navBar li a.active {
+  color: black;
+}
+
+#navBar li a:hover,
+#navBar li a:focus {
+  background-color: lightsteelblue;
+}
+
+#navBar .dropdown {
+  display: none;
+  position: absolute;
+  top: 100%;
+  left: 0;
+  background-color: steelblue;
+  min-width: 180px;
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+}
+
+#navBar .dropdown li {
+  float: none;
+}
+
+/* Reveal the dropdown on hover */
+#navBar li:hover .dropdown {
+  display: block;
+}
+
+/* --- Sidebar List Formatting --- */
+.sidebar-list {
+  list-style-type: none;
+  padding-left: 0;
+  margin-left: 0;
+}
+
+.sidebar-list li a {
+  text-decoration: none;
+}
+
