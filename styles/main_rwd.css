@@ -156,3 +156,24 @@ main{
         font-size: 90%;
     }
 }
+
+
+.slicknav_menu {
+    display: none;
+}
+
+@media screen and (max-width: 767px) {
+
+    #navBar {
+        display: none;
+    }
+
+    .slicknav_menu {
+        display: block;
+
+    }
+}
+
+@media screen and (max-width: 479px) {
+
+}
