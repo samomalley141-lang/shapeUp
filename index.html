@@ -4,7 +4,9 @@
 <head>
 	<meta charset="utf-8" name="viewport" content="width=device-width, initial-scale=1.0"/>
 	<title>Shape Up!</title>
+
   <link rel="stylesheet" href="styles/main_rwd.css">
+  <link rel="stylesheet" href="styles/slicknav.css">
 </head>
 
 <body>
@@ -15,6 +17,7 @@
     <h2>Find the best fist for you</h2>
   </div>
 </header>
+
 <main>
   <ul id="navBar">
     <li><a href="index.html" class="active">Home</a></li>
@@ -95,7 +98,17 @@
   </div>
 </main>
 <footer>
-	<p>&copy; 2022 Shape Up!</p>
+  <p>&copy; 2022 Shape Up!</p>
 </footer>
+
+<script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+<script src="js/jquery.slicknav.min.js"></script>
+<script>
+  $(document).ready(function(){
+    $('#navBar').slicknav({
+      prependTo: 'main'
+    });
+  });
+</script>
 </body>
 </html>
