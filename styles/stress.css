@@ -1,0 +1,147 @@
+body{
+    font-family: sans-serif;
+    align-content: center;
+    width: 95%;
+    max-width: 1024px;
+    margin: auto;
+    padding: .8rem;
+    border: 3px solid steelblue;
+    box-shadow: 5px 5px 10px black;
+}
+
+h1{
+    font-size: 2.2rem;
+    color: steelblue;
+    font-style: italic;
+    text-shadow: 2px 2px 3px steelblue;
+}
+
+h2{
+    font-size: 1.3rem;
+}
+
+h3{
+    font-size: 1.4rem;
+}
+
+h4{
+    font-size: 1.1rem;
+}
+
+h4 a, #headerTextRed, .red-text {
+    color: maroon;
+}
+
+h4 a:hover{
+    color: steelblue;
+}
+
+ul li a{
+    color: steelblue;
+}
+
+ul li a:hover{
+    color: maroon;
+}
+
+ul li{
+    padding: .2rem;
+}
+
+footer{
+    font-size: .8rem;
+    text-align: center;
+    align-content: center;
+    color: white;
+    background-color: steelblue;
+    height: 3.2em;
+}
+
+header img{
+    float: left;
+    min-width: 70px;
+    max-width: 140px;
+    width: auto;
+    height: auto;
+}
+
+.header-Text{
+    text-indent: 5em;
+}
+
+main{
+    border: 3px solid steelblue;
+    padding: .4rem;
+}
+
+.container {
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+    grid-gap: 1rem;
+}
+
+/* Navigation Menu */
+#navBar {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    background-color: steelblue;
+}
+
+#navBar::after {
+    content: "";
+    display: table;
+    clear: both;
+}
+
+#navBar > li {
+    float: left;
+    position: relative;
+}
+
+#navBar li a {
+    display: block;
+    color: white;
+    text-align: center;
+    padding:.9em 1em;
+    text-decoration: none;
+}
+
+#navBar li a.active {
+    color: black;
+}
+
+#navBar li a:hover,
+#navBar li a:focus {
+    background-color: lightsteelblue;
+}
+
+.sidebar-list {
+    list-style-type: none;
+    padding-left: 0;
+    margin-left: 0;
+}
+
+.sidebar-list li a {
+    text-decoration: none;
+}
+
+@media screen and (max-width: 900px) {
+    body {
+        box-shadow: none;
+        font-size: 90%;
+    }
+}
+
+.slicknav_menu {
+    display: none;
+}
+
+@media screen and (max-width: 767px) {
+    #navBar {
+        display: none;
+    }
+    .slicknav_menu {
+        display: block;
+    }
+}
